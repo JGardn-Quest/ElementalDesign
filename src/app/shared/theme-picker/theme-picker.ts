@@ -21,28 +21,16 @@ export class ThemePicker {
 
   themes = [
     {
-      primary: '#673AB7',
-      accent: '#FFC107',
-      href: 'deeppurple-amber.css',
+      primary: '#009bd6',
+      accent: '#ff683b',
+      href: 'iris-blue.css',
       isDark: false,
+      isDefault:true,
     },
     {
-      primary: '#3F51B5',
-      accent: '#E91E63',
-      href: 'indigo-pink.css',
-      isDark: false,
-      isDefault: true,
-    },
-    {
-      primary: '#E91E63',
-      accent: '#607D8B',
-      href: 'pink-bluegrey.css',
-      isDark: true,
-    },
-    {
-      primary: '#9C27B0',
-      accent: '#4CAF50',
-      href: 'purple-green.css',
+      primary: '#ff683b',
+      accent: '#802981',
+      href: 'maui-sunset.css',
       isDark: true,
     },
   ];

@@ -35,25 +35,30 @@
                 "input": "src/highlightjs/material-light.scss"
               },
               {
-                "input": "src/assets/pink-bluegrey.css",
+                "input": "src/assets/iris-blue.css",
                 "lazy": true,
-                "bundleName": "pink-bluegrey"
+                "bundleName": "iris-blue"
               },
               {
-                "input": "src/assets/deeppurple-amber.css",
+                "input": "src/assets/griffon-gray.css",
                 "lazy": true,
-                "bundleName": "deeppurple-amber"
+                "bundleName": "griffon-gray"
               },
               {
-                "input": "src/assets/indigo-pink.css",
+                "input": "src/assets/hawaii-blue.css",
                 "lazy": true,
-                "bundleName": "indigo-pink"
+                "bundleName": "hawaii-blue"
               },
               {
-                "input": "src/assets/purple-green.css",
+                "input": "src/assets/phoenix-red.css",
                 "lazy": true,
-                "bundleName": "purple-green"
-              }
+                "bundleName": "phoenix-red"
+              },
+              {
+                "input": "src/assets/maui-sunset.css",
+                "lazy": true,
+                "bundleName": "maui-sunset"
+              },
             ],
             "scripts": []
           },
@@ -111,25 +116,30 @@
                 "input": "src/highlightjs/material-light.scss"
               },
               {
-                "input": "src/assets/pink-bluegrey.css",
+                "input": "src/assets/iris-blue.css",
                 "lazy": true,
-                "bundleName": "pink-bluegrey"
+                "bundleName": "iris-blue"
               },
               {
-                "input": "src/assets/deeppurple-amber.css",
+                "input": "src/assets/griffon-gray.css",
                 "lazy": true,
-                "bundleName": "deeppurple-amber"
+                "bundleName": "griffon-gray"
               },
               {
-                "input": "src/assets/indigo-pink.css",
+                "input": "src/assets/hawaii-blue.css",
                 "lazy": true,
-                "bundleName": "indigo-pink"
+                "bundleName": "hawaii-blue"
               },
               {
-                "input": "src/assets/purple-green.css",
+                "input": "src/assets/phoenix-red.css",
                 "lazy": true,
-                "bundleName": "purple-green"
-              }
+                "bundleName": "phoenix-red"
+              },
+              {
+                "input": "src/assets/maui-sunset.css",
+                "lazy": true,
+                "bundleName": "maui-sunset"
+              },
             ],
             "assets": [
               {

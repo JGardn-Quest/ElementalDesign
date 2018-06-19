@@ -1,9 +1,10 @@
 @import '../../app-theme';
+@import '../../highlightjs/material-dark';
 
-// Define the light theme.
-$primary: mat-palette($iris-blue);
+// Define the dark theme.
+$primary: mat-palette($maui-sunset);
 $accent:  mat-palette($griffon-gray, A200, A100, A400);
 
-$theme: mat-light-theme($primary, $accent);
+$theme: mat-dark-theme($primary, $accent);
 @include angular-material-theme($theme);
 @include material-docs-app-theme($theme);

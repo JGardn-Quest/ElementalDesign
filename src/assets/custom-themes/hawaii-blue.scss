@@ -1,7 +1,7 @@
 @import '../../app-theme';
 
 // Define the light theme.
-$primary: mat-palette($iris-blue);
+$primary: mat-palette($hawaii-blue);
 $accent:  mat-palette($griffon-gray, A200, A100, A400);
 
 $theme: mat-light-theme($primary, $accent);
