@@ -24,6 +24,7 @@ import {StackblitzButtonModule} from './shared/stackblitz/stackblitz-button';
 import {NavBarModule} from './shared/navbar/navbar';
 import {ThemeStorage} from './shared/theme-picker/theme-storage/theme-storage';
 import {GuideItems} from './shared/guide-items/guide-items';
+import {DesignLanguageItems} from './shared/design-language-items/design-language-items';
 import {DocumentationItems} from './shared/documentation-items/documentation-items';
 import {GuideListModule} from './pages/guide-list/guide-list';
 import {GuideViewerModule} from './pages/guide-viewer/guide-viewer';
@@ -67,6 +68,7 @@ import {GaService} from './shared/ga/ga';
     DocumentationItems,
     GaService,
     GuideItems,
+    DesignLanguageItems,
     StyleManager,
     ThemeStorage,
     CanActivateComponentSidenav,

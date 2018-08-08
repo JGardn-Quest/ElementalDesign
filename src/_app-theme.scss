@@ -5,6 +5,7 @@
 @import './app/pages/component-sidenav/component-sidenav-theme';
 @import './app/pages/component-viewer/component-viewer-theme';
 @import './app/pages/guide-list/guide-list-theme';
+@import './app/pages/design-language-list/design-language-list-theme';
 @import './app/pages/homepage/homepage-theme';
 @import './app/shared/example-viewer/example-viewer-theme';
 @import './app/shared/footer/footer-theme';
@@ -14,6 +15,7 @@
 @import './styles/markdown-theme';
 @import './styles/svg-theme';
 @import './styles/tables-theme';
+//@import './assets/custom-themes/iris-blue';
 
 
 // Styles for the docs app that are based on the current theme.
@@ -52,6 +54,7 @@
   @include example-viewer-theme($theme);
   @include footer-theme($theme);
   @include guide-list-theme($theme);
+  @include design-language-list-theme($theme);
   @include home-page-theme($theme);
   @include nav-bar-theme($theme);
   @include table-of-contents-theme($theme);

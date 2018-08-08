@@ -1,7 +1,7 @@
-# Angular Material Docs Site
+# Elemental Material Docs Site
 
 ## Preview
-https://material2-docs-dev.firebaseapp.com/
+https://elementalmaterial.com
 
 ## Deployment instructions
 ```

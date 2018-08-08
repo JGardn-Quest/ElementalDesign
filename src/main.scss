@@ -4,16 +4,6 @@
 @import './styles/markdown';
 @import './styles/tables';
 @import './styles/general';
+@import './app/pages/design-language-viewer/design-language-viewer';
 
-
-// Include material core styles.
-@include mat-core();
-
-
-// Define the light theme.
-$primary: mat-palette($iris-blue);
-$accent:  mat-palette($phoenix-red, A200, A100, A400);
-
-$theme: mat-light-theme($primary, $accent);
-@include angular-material-theme($theme);
-@include material-docs-app-theme($theme);
+@import './assets/custom-themes/iris-blue';

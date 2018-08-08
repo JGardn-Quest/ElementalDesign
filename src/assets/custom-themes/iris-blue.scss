@@ -1,4 +1,176 @@
 @import '../../app-theme';
+$custom-typography: mat-typography-config(
+	$font-family:	'Source Sans Pro, "Helvetica Neue", sans-serif',
+	$button:        mat-typography-level(14px, 14px, 500)
+);
+
+@include mat-core($custom-typography);
+
+
+$iris-blue: (
+  50: #dff3f9,
+  100: #aee0f1,
+  200: #79cce8,
+  300: #43b7df,
+  400: #05AADB,
+  500: #009bd6,
+  600: #008ec9,
+  700: #007cb6,
+  800: #006ba3,
+  900: #004c83,
+  A100: #ffcab9,
+  A200: #ffa88c,
+  A400: #ff683b,
+  A700: #e93f0a,
+  contrast: (
+    50: #2f2f2f,
+    100: #2f2f2f,
+    200: #2f2f2f,
+    300: #2f2f2f,
+    400: #2f2f2f,
+    500: $light-primary-text,
+    600: $light-primary-text,
+    700: $light-primary-text,
+    800: $light-primary-text,
+    900: $light-primary-text,
+    A100: #2f2f2f,
+    A200: #2f2f2f,
+    A400: #2f2f2f,
+    A700: #2f2f2f,
+  )
+);
+
+$hawaii-blue: (
+  50: #e0f2f1,
+  100: #b2dfdb,
+  200: #80cbc4,
+  300: #4db6ac,
+  400: #26a69a,
+  500: #009688,
+  600: #00897b,
+  700: #00796b,
+  800: #00695c,
+  900: #004d40,
+  A100: #ffffff,
+  A200: #ffffff,
+  A400: #ffffff,
+  A700: #ffffff,
+  contrast: (
+    50: $dark-primary-text,
+    100: $dark-primary-text,
+    200: $dark-primary-text,
+    300: $dark-primary-text,
+    400: $dark-primary-text,
+    500: $light-primary-text,
+    600: $light-primary-text,
+    700: $light-primary-text,
+    800: $light-primary-text,
+    900: $light-primary-text,
+    A100: $dark-primary-text,
+    A200: $dark-primary-text,
+    A400: $dark-primary-text,
+    A700: $dark-primary-text,
+  )
+);
+
+$griffon-gray: (
+  50: #fbfbfb,
+  100: #f7f7f7,
+  200: #f2f2f2,
+  300: #e8e8e8,
+  400: #c6c6c6,
+  500: #a8a8a8,
+  600: #7f7f7f,
+  700: #6a6a6a,
+  800: #4a4a4a,
+  900: #292929,
+  A100: #4a4a4a,
+  A200: #4a4a4a,
+  A400: #4a4a4a,
+  A700: #ffffff,
+  contrast: (
+    50: $dark-primary-text,
+    100: $dark-primary-text,
+    200: $dark-primary-text,
+    300: $dark-primary-text,
+    400: $dark-primary-text,
+    500: $light-primary-text,
+    600: $light-primary-text,
+    700: $light-primary-text,
+    800: $light-primary-text,
+    900: $light-primary-text,
+    A100: $dark-primary-text,
+    A200: $dark-primary-text,
+    A400: $dark-primary-text,
+    A700: $dark-primary-text,
+  )
+);
+
+$phoenix-red: (
+  50: #fce8e6,
+  100: #ffcab9,
+  200: #ffa88c,
+  300: #ff845e,
+  400: #ff683b,
+  500: #ff4c15,
+  600: #f74611,
+  700: #e93f0a,
+  800: #db3705,
+  900: #c32800,
+  A100: #69CCE9,
+  A200: #69CCE9,
+  A400: #69CCE9,
+  A700: #ffffff,
+  contrast: (
+    50: $dark-primary-text,
+    100: $dark-primary-text,
+    200: $dark-primary-text,
+    300: $dark-primary-text,
+    400: $dark-primary-text,
+    500: $light-primary-text,
+    600: $light-primary-text,
+    700: $light-primary-text,
+    800: $light-primary-text,
+    900: $light-primary-text,
+    A100: $dark-primary-text,
+    A200: $dark-primary-text,
+    A400: $light-primary-text,
+    A700: $light-primary-text,
+  )
+);
+
+$maui-sunset: (
+  50: #f3e5f1,
+  100: #e2bfdc,
+  200: #cf95c6,
+  300: #bb6caf,
+  400: #ac4e9f,
+  500: #9c348f,
+  600: #903089,
+  700: #802981,
+  800: #702478,
+  900: #561c67,
+  A100: #4a4a4a,
+  A200: #4a4a4a,
+  A400: #4a4a4a,
+  A700: #ffffff,
+  contrast: (
+    50: $dark-primary-text,
+    100: $dark-primary-text,
+    200: $dark-primary-text,
+    300: $dark-primary-text,
+    400: $dark-primary-text,
+    500: $light-primary-text,
+    600: $light-primary-text,
+    700: $light-primary-text,
+    800: $light-primary-text,
+    900: $light-primary-text,
+    A100: $dark-primary-text,
+    A200: $dark-primary-text,
+    A400: $dark-primary-text,
+    A700: $dark-primary-text,
+  )
+);
 
 // Define the light theme.
 $primary: mat-palette($iris-blue);
@@ -7,3 +179,229 @@ $accent: mat-palette($phoenix-red, A200, A100, A400);
 $theme: mat-light-theme($primary, $accent);
 @include angular-material-theme($theme);
 @include material-docs-app-theme($theme);
+
+
+
+
+
+/* -- Begin CSS Reset -- */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+/* -- End Reset -- */
+
+body {
+  font-family: "Source Sans Pro","Helvetica Neue Light","Helvetica Neue", Helvetica, Arial,"Lucida Grande", sans-serif;
+  color: #2f2f2f;
+  font-size:16px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.body_small { 
+  font-size:14px; 
+}
+
+.subtitle2 {
+  font-size:14px;
+  font-weight:500;
+}
+
+h1 { 
+  font-size: 96px;
+  font-weight: 300; 
+}
+
+h2 {
+  font-size: 60px;
+  font-weight: 300;
+}
+
+h3 {
+  font-size:48px;
+  font-weight: 400;
+}
+
+h4 {
+  font-size:34px;
+  font-weight: 400;
+}
+
+h5 {
+  font-size: 24px;
+  font-weight:400;
+}
+
+h6 {
+  font-size:20px;
+  font-weight:500;
+}
+
+button { 
+  font-size:16px; 
+  font-weight:500;
+  letter-spacing:0.75px;
+}
+
+li {
+  list-style-type:none;
+  margin:0 0 0 25px;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+table {
+  width:100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  display:table;
+  border-collapse:collapse;
+  border-color:gray;
+}
+
+thead {
+  display: table-header-group;
+  vertical-align: middle;
+  border-color:inherit;
+}
+
+tr {
+  display: table-row;
+  vertical-align:inherit;
+  border-color:inherit;
+}
+
+tbody {
+  display: table-row-group;
+  vertical-align:middle;
+  border-color:inherit;
+}
+
+td, th {
+  display: table-cell;
+  vertical-align: inherit;
+  padding: 24px;
+}
+
+
+td.mat-cell, td.mat-footer-cell, th.mat-header-cell { 
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+}
+
+td.mat-cell:first-child, td.mat-footer-cell:first-child, th.mat-header-cell:first-child { padding-left:24px; }
+th.mat-header-cell { text-align:left; }
+
+tfoot {
+  display: table-footer-group;
+  vertical-align:middle;
+  border-color:inherit;
+}
+
+.light { font-weight:300; }
+.bold { font-weight:700; }
+
+/* Background color options */
+.bg-iris-blue { background-color: #05AADB; }
+.bg-iris-tint { background-color: #82D5ED; }
+.bg-iris-shade { background-color: #02556D; }
+.bg-white { background-color: #fff; }
+.bg-asher-gray { background-color: #f2f2f2; }
+.bg-gunmetal { background-color: #333; }
+.bg-phoenix-red { background-color: #B42126; }
+.bg-phoenix-tint { background-color: #DA9093; }
+.bg-phoenix-shade { background-color: #5a1013; }
+.bg-corbin-orange { background-color: #F4770B; }
+.bg-corbin-tint { background-color: #FABB85; }
+.bg-corbin-shade { background-color: #7A3B05; }
+.bg-aspen-green { background-color: #618F3E; }
+.bg-aspen-tint { background-color: #B0C79F; }
+.bg-aspen-shade { background-color: #30471F; }
+.bg-tiki-sunrise { background-color: #F0DF3F; }
+.bg-tiki-tint { background-color: #F8EF9F; }
+.bg-tiki-shade { background-color: #786F1F; }
+.bg-maui-sunset { background-color: #802981; }
+.bg-maui-tint { background-color: #C094C0; }
+.bg-maui-shade { background-color: #401440; }
+.bg-azalea-pink { background-color: #F10C8A; }
+.bg-azalea-tint { background-color: #F886C5; }
+.bg-azalea-shade { background-color: #780645; }
+.bg-black { background-color: #000; }
+.bg-black-3 { background-color: #333; }
+.bg-black-4 { background-color: #4c4c4c; }
+.bg-black-6 { background-color: #666; }
+.bg-black-7 { background-color: #7f7f7f; }
+.bg-black-9 { background-color: #999; }
+.bg-black-b { background-color: #b2b2b2; }
+.bg-black-c { background-color: #ccc; }
+
+/* Font color options */
+.text-iris-blue { color: #05AADB; }
+.text-iris-tint { color: #82D5ED; }
+.text-iris-shade { color: #02556D; }
+.text-white { color: #fff; }
+.text-asher-gray { color: #f2f2f2; }
+.text-gunmetal { color: #333; }
+.text-phoenix-red { color: #B42126; }
+.text-phoenix-tint { color: #DA9093; }
+.text-phoenix-shade { color: #5a1013; }
+.text-corbin-orange { color: #F4770B; }
+.text-corbin-tint { color: #FABB85; }
+.text-corbin-shade { color: #7A3B05; }
+.text-aspen-green { color: #618F3E; }
+.text-aspen-tint { color: #B0C79F; }
+.text-aspen-shade { color: #30471F; }
+.text-tiki-sunrise { color: #F0DF3F; }
+.text-tiki-tint { color: #F8EF9F; }
+.text-tiki-shade { color: #786F1F; }
+.text-maui-sunset { color: #802981; }
+.text-maui-tint { color: #C094C0; }
+.text-maui-shade { color: #401440; }
+.text-azalea-pink { color: #F10C8A; }
+.text-azalea-tint { color: #F886C5; }
+.text-azalea-shade { color: #780645; }
+.text-black { color: #000; }
+.text-black-3 { color: #333; }
+.text-black-4 { color: #4c4c4c; }
+.text-black-6 { color: #666; }
+.text-black-7 { color: #7f7f7f; }
+.text-black-9 { color: #999; }
+.text-black-b { color: #b2b2b2; }
+.text-black-c { color: #ccc; }
+
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.margin-top-25 {
+  margin-top:25px;
+}
+
+code {
+  font-size: 90%;
+}

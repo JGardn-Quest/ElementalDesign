@@ -1,0 +1,13 @@
+<div class="docs-primary-header">
+  <h1>Design Language</h1>
+</div>
+
+<mat-nav-list class="docs-design-language-list">
+  <a mat-list-item *ngFor="let designLanguage of designLanguageItems.getAllItems()"
+      class="docs-design-language-item"
+      [routerLink]="['/design/', designLanguage.id]">
+    {{designLanguage.name}}
+  </a>
+</mat-nav-list>
+
+<app-footer></app-footer>
