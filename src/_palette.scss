@@ -1,0 +1,410 @@
+/// Color Palette, Material Design Palette and Helper Classes
+/// Material Design Palettes 
+
+@import '~@angular/material/theming';
+
+$iris-blue-palette: (
+  50: #E1F5FB,
+  100: #B4E6F4,
+  200: #82D5ED,
+  300: #50C4E6,
+  400: #2BB7E0,
+  500: #05AADB,
+  600: #04A3D7,
+  700: #0499D2,
+  800: #0390CD,
+  900: #017FC4,
+  A100: #ECF8FF,
+  A200: #B9E3FF,
+  A400: #86CFFF,
+  A700: #6DC5FF,
+  contrast: (
+    50: #FBE7E1,
+    100: #F4C3B4,
+    200: #ED9B82,
+    300: #E67350,
+    400: #E0552B,
+    500: #fff,
+    600: #fff,
+    700: #fff,
+    800: #fff,
+    900: #fff,
+    A100: #FFEDEC,
+    A200: #FFBDB9,
+    A400: #FF8D86,
+    A700: #FF756D,
+  )
+);
+
+$iris-tint-palette: (
+  50: #F0FAFD,
+  100: #DAF2FA,
+  200: #C1EAF6,
+  300: #A8E2F2,
+  400: #95DBF0,
+  500: #82D5ED,
+  600: #7AD0EB,
+  700: #6FCAE8,
+  800: #65C4E5,
+  900: #52BAE0,
+  A100: #FFFFFF,
+  A200: #FFFFFF,
+  A400: #DAF5FF,
+  A700: #C0EDFF,
+  contrast: (
+    50: #FDF3F0,
+    100: #FAE0DA,
+    200: #F6CCC1,
+    300: #F2B8A8,
+    400: #F0A895,
+    500: #333,
+    600: #333,
+    700: #333,
+    800: #333,
+    900: #333,
+    A100: #FFFFFF,
+    A200: #FFFFFF,
+    A400: #FFE0DA,
+    A700: #FFCAC0,
+  )
+);
+
+$iris-shade-palette: (
+  50: #E1EBED,
+  100: #B3CCD3,
+  200: #81AAB6,
+  300: #4E8899,
+  400: #286F83,
+  500: #02556D,
+  600: #024E65,
+  700: #01445A,
+  800: #013B50,
+  900: #012A3E,
+  A100: #74C8FF,
+  A200: #41B4FF,
+  A400: #0EA1FF,
+  A700: #0094F3,
+  contrast: (
+    50: #EDE3E1,
+    100: #D3BAB3,
+    200: #B68C81,
+    300: #995E4E,
+    400: #833C28,
+    500: $light-primary-text,
+    600: $light-primary-text,
+    700: $light-primary-text,
+    800: $light-primary-text,
+    900: $light-primary-text,
+    A100: #FF7A74,
+    A200: #FF4941,
+    A400: #FF180E,
+    A700: #F30B00,
+  )
+);
+
+$asher-gray-palette: (
+  50: #FDFDFD,
+  100: #FBFBFB,
+  200: #F9F9F9,
+  300: #F6F6F6,
+  400: #F4F4F4,
+  500: #F2F2F2,
+  600: #F0F0F0,
+  700: #EEEEEE,
+  800: #ECECEC,
+  900: #E8E8E8,
+  A100: #FFFFFF,
+  A200: #FFFFFF,
+  A400: #FFFFFF,
+  A700: #FFFFFF,
+  contrast: (
+    50: #FDFDFD,
+    100: #D3BAB3,
+    200: #B68C81,
+    300: #995E4E,
+    400: #833C28,
+    500: #333,
+    600: #333,
+    700: #333,
+    800: #333,
+    900: $light-primary-text,
+    A100: #FF7A74,
+    A200: #FF4941,
+    A400: #FF180E,
+    A700: #F30B00,
+  )
+);
+
+$gunmetal-palette: (
+  50: #E7E7E7,
+  100: #C2C2C2,
+  200: #999999,
+  300: #707070,
+  400: #525252,
+  500: #333333,
+  600: #2E2E2E,
+  700: #272727,
+  800: #202020,
+  900: #141414,
+  A100: #EF6E6E,
+  A200: #EA4040,
+  A400: #F60000,
+  A700: #DD0000,
+  contrast: (
+    50: #FDFDFD,
+    100: #D3BAB3,
+    200: #B68C81,
+    300: #995E4E,
+    400: #833C28,
+    500: #333,
+    600: #333,
+    700: #333,
+    800: #333,
+    900: #333,
+    A100: #FF7A74,
+    A200: #FF4941,
+    A400: #FF180E,
+    A700: #F30B00,
+  )
+);
+
+$black-c-palette: (
+  50: #F9F9F9,
+  100: #F0F0F0,
+  200: #E6E6E6,
+  300: #DBDBDB,
+  400: #D4D4D4,
+  500: #CCCCCC,
+  600: #C7C7C7,
+  700: #C0C0C0,
+  800: #B9B9B9,
+  900: #ADADAD,
+  A100: #FFFFFF,
+  A200: #FFFFFF,
+  A400: #FFFCFC,
+  A700: #FFE2E2,
+  contrast: (
+    50: #FDFDFD,
+    100: #D3BAB3,
+    200: #B68C81,
+    300: #995E4E,
+    400: #833C28,
+    500: #333,
+    600: #333,
+    700: #333,
+    800: #333,
+    900: #333,
+    A100: #FF7A74,
+    A200: #FF4941,
+    A400: #FF180E,
+    A700: #F30B00,
+  )
+);
+
+$phoenix-red-palette: (
+  50: #F6E4E5,
+  100: #E9BCBE,
+  200: #DA9093,
+  300: #CB6467,
+  400: #BF4247,
+  500: #B42126,
+  600: #AD1D22,
+  700: #A4181C,
+  800: #9C1417,
+  900: #8C0B0D,
+  A100: #FFBCBC,
+  A200: #FF898A,
+  A400: #FF5657,
+  A700: #FF3C3E,
+  contrast: (
+    50: $dark-primary-text,
+    100: $dark-primary-text,
+    200: $dark-primary-text,
+    300: $dark-primary-text,
+    400: $dark-primary-text,
+    500: $light-primary-text,
+    600: $light-primary-text,
+    700: $light-primary-text,
+    800: $light-primary-text,
+    900: $light-primary-text,
+    A100: $dark-primary-text,
+    A200: $dark-primary-text,
+    A400: $light-primary-text,
+    A700: $light-primary-text,
+  )
+);
+
+$corbin-orange-palette: (
+  50: #FEEFE2,
+  100: #FCD6B6,
+  200: #FABB85,
+  300: #F7A054,
+  400: #F68B30,
+  500: #F4770B,
+  600: #F36F0A,
+  700: #F16408,
+  800: #EF5A06,
+  900: #EC4703,
+  A100: #FFFFFF,
+  A200: #FFE7E0,
+  A400: #FFC0AD,
+  A700: #FFAD93,
+  contrast: (
+    50: $dark-primary-text,
+    100: $dark-primary-text,
+    200: $dark-primary-text,
+    300: $dark-primary-text,
+    400: $dark-primary-text,
+    500: $light-primary-text,
+    600: $light-primary-text,
+    700: $light-primary-text,
+    800: $light-primary-text,
+    900: $light-primary-text,
+    A100: $dark-primary-text,
+    A200: $dark-primary-text,
+    A400: $light-primary-text,
+    A700: $light-primary-text,
+  )
+);
+
+
+$maui-shade-palette: (
+  50: #F0E5F0,
+  100: #D9BFD9,
+  200: #C094C0,
+  300: #A669A7,
+  400: #934994,
+  500: #802981,
+  600: #782479,
+  700: #6D1F6E,
+  800: #631964,
+  900: #500F51,
+  A100: #FD89FF,
+  A200: #FC56FF,
+  A400: #FB23FF,
+  A700: #FB09FF,
+  contrast: (
+    50: $dark-primary-text,
+    100: $dark-primary-text,
+    200: $dark-primary-text,
+    300: $dark-primary-text,
+    400: $dark-primary-text,
+    500: $light-primary-text,
+    600: $light-primary-text,
+    700: $light-primary-text,
+    800: $light-primary-text,
+    900: $light-primary-text,
+    A100: $dark-primary-text,
+    A200: $dark-primary-text,
+    A400: $light-primary-text,
+    A700: $light-primary-text,
+  )
+);
+
+// Primary Colors
+$iris-blue: #05AADB;
+$iris-tint: #82D5ED;
+$iris-shade: #02556D;
+$white: #FFF;
+$asher-gray: #F2F2F2;
+$gunmetal: #333;
+
+// Secondary Colors
+$phoenix-red: #B42126;
+$phoenix-tint: #DA9093;
+$phoenix-shade: #5A1013;
+$corbin-orange: #F4770B;
+$corbin-tint: #FABB85;
+$corbin-shade: #7A3B05;
+$aspen-green: #618F3E;
+$aspen-tint: #B0C79F;
+$aspen-shade: #30471F;
+
+// Tertiary Colors
+$tiki-sunrise: #F0DF3F;
+$tiki-tint: #F8Ef9F;
+$tiki-shade: #786F1F;
+$maui-sunset: #802981;
+$maui-tint: #C094C0;
+$maui-shade: #401440;
+$azalea-pink: #F10C8A;
+$azalea-tint: #F886C5;
+$azalea-shade: #780645;
+
+// Grayscale
+$black: #000;
+$black-3: #333;
+$black-4: #4C4C4C;
+$black-6: #666;
+$black-7: #7F7F7F;
+$black-9: #999;
+$black-b: #B2B2B2;
+$black-c: #CCC;
+
+/// Background color class options
+.bg-iris-blue { background-color: $iris-blue; }
+.bg-iris-tint { background-color: $iris-tint; }
+.bg-iris-shade { background-color: $iris-shade; }
+.bg-white { background-color: $white; }
+.bg-asher-gray { background-color: $asher-gray; }
+.bg-gunmetal { background-color: $gunmetal; }
+.bg-phoenix-red { background-color: $phoenix-red; }
+.bg-phoenix-tint { background-color: $phoenix-tint; }
+.bg-phoenix-shade { background-color: $phoenix-shade; }
+.bg-corbin-orange { background-color: $corbin-orange; }
+.bg-corbin-tint { background-color: $corbin-tint; }
+.bg-corbin-shade { background-color: $corbin-shade; }
+.bg-aspen-green { background-color: $aspen-green; }
+.bg-aspen-tint { background-color: $aspen-tint; }
+.bg-aspen-shade { background-color: $aspen-shade; }
+.bg-tiki-sunrise { background-color: $tiki-sunrise; }
+.bg-tiki-tint { background-color: $tiki-tint; }
+.bg-tiki-shade { background-color: $tiki-shade; }
+.bg-maui-sunset { background-color: $maui-sunset; }
+.bg-maui-tint { background-color: $maui-tint; }
+.bg-maui-shade { background-color: $maui-shade; }
+.bg-azalea-pink { background-color: $azalea-pink; }
+.bg-azalea-tint { background-color: $azalea-tint; }
+.bg-azalea-shade { background-color: $azalea-shade; }
+.bg-black { background-color: $black; }
+.bg-black-3 { background-color: $black-3; }
+.bg-black-4 { background-color: $black-4; }
+.bg-black-6 { background-color: $black-6; }
+.bg-black-7 { background-color: $black-7; }
+.bg-black-9 { background-color: $black-9; }
+.bg-black-b { background-color: $black-b; }
+.bg-black-c { background-color: $black-c; }
+
+/// Font color class options
+.text-iris-blue { color: $iris-blue; }
+.text-iris-tint { color: $iris-tint; }
+.text-iris-shade { color: $iris-shade; }
+.text-white { color: $white; }
+.text-asher-gray { color: $asher-gray; }
+.text-gunmetal { color: $gunmetal; }
+.text-phoenix-red { color: $phoenix-red; }
+.text-phoenix-tint { color: $phoenix-tint; }
+.text-phoenix-shade { color: $phoenix-shade; }
+.text-corbin-orange { color: $corbin-orange; }
+.text-corbin-tint { color: $corbin-tint; }
+.text-corbin-shade { color: $corbin-shade; }
+.text-aspen-green { color: $aspen-green; }
+.text-aspen-tint { color: $aspen-tint; }
+.text-aspen-shade { color: $aspen-shade; }
+.text-tiki-sunrise { color: $tiki-sunrise; }
+.text-tiki-tint { color: $tiki-tint; }
+.text-tiki-shade { color: $tiki-shade; }
+.text-maui-sunset { color: $maui-sunset; }
+.text-maui-tint { color: $maui-tint; }
+.text-maui-shade { color: $maui-shade; }
+.text-azalea-pink { color: $azalea-pink; }
+.text-azalea-tint { color: $azalea-tint; }
+.text-azalea-shade { color: $azalea-shade; }
+.text-black { color: $black; }
+.text-black-3 { color: $black-3; }
+.text-black-4 { color: $black-4; }
+.text-black-6 { color: $black-6; }
+.text-black-7 { color: $black-7; }
+.text-black-9 { color: $black-9; }
+.text-black-b { color: $black-b; }
+.text-black-c { color: $black-c; }

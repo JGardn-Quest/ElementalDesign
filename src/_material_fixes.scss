@@ -1,0 +1,51 @@
+
+/*--- -------------------------------------------*/
+/*--- Fixes for Angular Material issues / bugs --*/
+/*--- -------------------------------------------*/
+
+/*-- adding default padding between radio buttons in radio group --*/
+.mat-radio-label {
+  padding:10px 0;
+}
+
+/*-- fixing broken fixed height and width of datepicker popup --*/
+.mat-datepicker-popup {
+  .mat-datepicker-content {
+      .mat-calendar {
+          width:auto;
+          height:auto;
+      }
+  }
+}
+
+/*-- improving contrast of <mat-button-toggle> text --*/
+.mat-button-toggle {
+  color:$black-6;
+  &.mat-button-toggle-checked {
+      color:$black-3;
+  }
+}
+
+/*-- space between <mat-chip> and <eui-icon> --*/
+.mat-chip {
+  .eui-icon {
+      padding:0 5px;
+  }
+}
+
+/*-- <select> and <datepicker> layout in appearance="outline" --*/
+.mat-form-field-infix {
+  input {
+    &.mat-input-element {
+      vertical-align: middle;
+      margin-top:-13px;
+    }
+  }
+  .mat-select-trigger {
+      vertical-align: middle;
+      margin-top:-13px;
+      .mat-select-arrow-wrapper {
+        vertical-align: bottom;
+      }
+  }
+}

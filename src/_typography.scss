@@ -1,0 +1,81 @@
+/// Typography & helper classes
+
+body {
+  font-family: "Source Sans Pro","Helvetica Neue Light","Helvetica Neue", Helvetica, Arial,"Lucida Grande", sans-serif;
+  color: $gunmetal;
+  font-size:16px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.legalText {
+  font-size:12px;
+}
+
+.bodySmall { 
+  font-size:14px; 
+}
+
+.subtitle2 {
+  font-size:14px;
+  font-weight:500;
+}
+
+h1 { 
+  font-size: 30px;
+  font-weight: 300; 
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 300;
+}
+
+h3 {
+  font-size:20px;
+  font-weight: 400;
+}
+
+h4 {
+  font-size:20px;
+  font-weight: 400;
+}
+
+h5 {
+  font-size: 18px;
+  font-weight:400;
+}
+
+h6 {
+  font-size:16px;
+  font-weight:600;
+}
+
+.light { 
+  font-weight:300; 
+}
+
+.bold { 
+  font-weight:700; 
+}
+
+.centered { 
+  text-align:center; 
+}
+
+a {
+  color: $iris-blue;
+  text-decoration: none;
+}
+
+button { 
+    font-size:16px; 
+    font-weight:600;
+    letter-spacing:0.75px;
+  }
+
+button {
+    &.mat-raised-button, &.mat-button, &.mat-stroked-button {
+        font-weight:600;
+    }
+}

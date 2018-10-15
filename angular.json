@@ -40,25 +40,10 @@
                 "bundleName": "iris-blue"
               },
               {
-                "input": "src/assets/griffon-gray.css",
+                "input": "src/assets/gunmetal.css",
                 "lazy": true,
-                "bundleName": "griffon-gray"
-              },
-              {
-                "input": "src/assets/hawaii-blue.css",
-                "lazy": true,
-                "bundleName": "hawaii-blue"
-              },
-              {
-                "input": "src/assets/phoenix-red.css",
-                "lazy": true,
-                "bundleName": "phoenix-red"
-              },
-              {
-                "input": "src/assets/maui-sunset.css",
-                "lazy": true,
-                "bundleName": "maui-sunset"
-              },
+                "bundleName": "gunmetal"
+              }
             ],
             "scripts": []
           },
@@ -121,25 +106,10 @@
                 "bundleName": "iris-blue"
               },
               {
-                "input": "src/assets/griffon-gray.css",
+                "input": "src/assets/gunmetal.css",
                 "lazy": true,
-                "bundleName": "griffon-gray"
-              },
-              {
-                "input": "src/assets/hawaii-blue.css",
-                "lazy": true,
-                "bundleName": "hawaii-blue"
-              },
-              {
-                "input": "src/assets/phoenix-red.css",
-                "lazy": true,
-                "bundleName": "phoenix-red"
-              },
-              {
-                "input": "src/assets/maui-sunset.css",
-                "lazy": true,
-                "bundleName": "maui-sunset"
-              },
+                "bundleName": "gunmetal"
+              }
             ],
             "assets": [
               {

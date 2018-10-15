@@ -13,11 +13,11 @@ describe('ThemePicker', () => {
   it('should install theme based on href', () => {
     const fixture = TestBed.createComponent(ThemePicker);
     const component = fixture.componentInstance;
-    const href = 'pink-bluegrey.css';
+    const href = 'iris-blue.css';
     spyOn(component.styleManager, 'setStyle');
     component.installTheme({
-      primary: '#E91E63',
-      accent: '#607D8B',
+      primary: 'iris-blue',
+      accent: 'corbin-orange',
       href,
     });
     expect(component.styleManager.setStyle).toHaveBeenCalled();

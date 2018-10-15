@@ -8,12 +8,11 @@ $custom-typography: mat-typography-config(
 
 @include mat-core($custom-typography);
 
-
-// Define the light theme.
-$primary: mat-palette($iris-blue-palette);
+// Define the dark theme.
+$primary: mat-palette($gunmetal-palette);
 $accent: mat-palette($corbin-orange-palette);
 $warn: mat-palette($phoenix-red-palette);
 
-$theme: mat-light-theme($primary, $accent);
+$theme: mat-dark-theme($primary, $accent);
 @include angular-material-theme($theme);
 @include material-docs-app-theme($theme);

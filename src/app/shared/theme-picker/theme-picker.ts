@@ -21,16 +21,16 @@ export class ThemePicker {
 
   themes = [
     {
-      primary: '#009bd6',
-      accent: '#ff683b',
+      primary: '#05aadb',
+      accent: '#f4770b',
       href: 'iris-blue.css',
       isDark: false,
       isDefault:true,
     },
     {
-      primary: '#ff683b',
-      accent: '#802981',
-      href: 'maui-sunset.css',
+      primary: '#333',
+      accent: '#f4770b',
+      href: 'gunmetal.css',
       isDark: true,
     },
   ];
